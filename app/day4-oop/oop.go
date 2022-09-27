@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 type Voice interface {
-	cry()  string
+	cry() string
 	laught() string
 	interested() string
 }
@@ -11,27 +11,25 @@ type Voice interface {
 type Profile interface {
 	height() float32
 	weight() float32
-	gender() string 
+	gender() string
 }
 
 type People struct {
-    name string
-    income []int
-	id  map[string]string
+	name   string
+	income []int
+	id     map[string]string
 }
 
 type Animal struct {
 	name string
-	id map[string]string
+	id   map[string]string
 }
 
 func (aoao *People) cry() string {
-  fmt.Printf("this is people cry: %v\n",aoao.name)
-  s := ""
-  return s 
+	fmt.Printf("this is people cry: %v\n", aoao.name)
+	s := ""
+	return s
 }
-
-
 
 func main() {
 
