@@ -6,7 +6,7 @@ import (
 	"net/http"
 )
 
-func webPageFunc(req *http.ResponseWriter, res *http.Request) {
+func webPageFunc(req http.ResponseWriter, res *http.Request) {
 	t, err := template.ParseFiles("./tmpl_exmpl.html")
 	if err != nil {
 		fmt.Println("template parse error:", err)
