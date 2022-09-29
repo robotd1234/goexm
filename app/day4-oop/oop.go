@@ -29,6 +29,9 @@ func (aoao *People) cry() string {
 	fmt.Printf("this is people cry: %v\n", aoao.name)
 	s := ""
 	return s
+<<<<<<< HEAD
+=======
+>>>>>>> origin/branch1
 }
 
 func main() {
